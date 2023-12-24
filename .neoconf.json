@@ -1,0 +1,27 @@
+{
+    "neodev": {
+        "library": {
+            "enabled": true,
+            "plugins": ["nvim-lspconfig", "lsp"]
+        }
+    },
+    "neoconf": {
+        "plugins": {
+            "lua_ls": {
+                "enabled": true
+            },
+            "rust-analyzer": {
+                "enabled": true
+            }
+        }
+    },
+    "lspconfig": {
+        "rust-analyzer": {
+            "rust-analyzer.rustfmt.overrideCommand": [
+                "leptosfmt",
+                "--stdin",
+                "--rustfmt"
+            ]
+        }
+    }
+}
